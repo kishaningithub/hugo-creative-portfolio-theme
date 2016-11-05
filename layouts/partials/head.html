@@ -17,4 +17,8 @@
 <!-- Custom stylesheet - for your changes -->
 <link href="{{ .Site.BaseURL }}css/custom.css" rel="stylesheet">
 <link rel="shortcut icon" href="{{ .Site.BaseURL }}favicon.png">
+{{ if .RSSlink }}
+  <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+  <link href="{{ .RSSlink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+{{ end }}
 {{ template "_internal/google_analytics_async.html" . }}
