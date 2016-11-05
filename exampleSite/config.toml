@@ -2,6 +2,8 @@ baseurl = "https://example.org"
 title = "Creative portfolio"
 theme = "hugo-creative-portfolio-theme"
 languageCode = "en-us"
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = ""
 
 [params]
   # Style options: default (pink), blue, green, pink, red, sea, violet
