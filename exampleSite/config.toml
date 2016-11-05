@@ -1,0 +1,32 @@
+baseurl = "https://example.org"
+title = "Creative portfolio"
+theme = "hugo-creative-portfolio-theme"
+languageCode = "en-us"
+
+[params]
+  # Style options: default (pink), blue, green, pink, red, sea, violet
+  # Use custom.css for your custom styling
+  style = "default"
+  description = "Describe your website"
+
+  # Nav links in the side bar
+  [[params.navlinks]]
+  name = "Home"
+  url = "/"
+
+  [[params.navlinks]]
+  name = "About"
+  url = "about/"
+
+  [[params.navlinks]]
+  name = "Get in touch"
+  url = "contact/"
+
+  [params.social]
+  facebook     = "full page or profile url"
+  googleplus   = "full profile url"
+  email        = "email@example.com"
+  twitter      = "full profile url"
+  linkedIn     = "full profile url"
+  stackverflow = "full profile url"
+  instagram    = "full profile url"

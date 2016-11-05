@@ -1,0 +1,38 @@
+<div class="col-xs-12 col-sm-8 col-md-9 content-column">
+    <div class="small-navbar visible-xs">
+        <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
+        <h1 class="small-navbar-heading"><a href="/">{{ .Site.Title }}</a></h1>
+    </div>
+    <div class="grid">
+        <div class="row">
+          {{ range .Site.Pages.Reverse }}
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
+                  <div class="box-masonry">
+                      {{ if and (isset .Params "image") .Params.image }}
+                        {{ if eq .Params.showonlyimage true }}
+                        <a href="{{ .Permalink }}" title="" class="box-masonry-image with-hover-overlay">
+                        {{ else }}
+                        <a href="{{ .Permalink }}" title="" class="box-masonry-image with-hover-overlay with-hover-icon">
+                        {{ end }}
+                            <img src="{{ .Params.image }}" alt="" class="img-responsive">
+                        </a>
+                      {{ end }}
+                      {{ if eq .Params.showonlyimage true }}
+                      <div class="box-masonry-hover-text-header">
+                      {{ else }}
+                      <div class="box-masonry-text">
+                      {{ end }}
+                          <h4> <a href="detail.html">{{ .Title }}</a></h4>
+                          <div class="box-masonry-desription">
+                              <p>{{ .Params.shortdesc }}</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+          {{ end }}
+
+        </div>
+    </div>
+
+</div>
