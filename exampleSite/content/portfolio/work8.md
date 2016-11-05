@@ -1,14 +1,13 @@
 +++
 showonlyimage = false
 draft = false
-shortdesc = "Fifth abundantly made Give sixth hath. Cattle creature i be don't them."
 image = "img/portfolio/ipad-air-2.jpg"
 date = "2016-11-05T19:59:22+05:30"
 title = "Name of the work 8"
-
 +++
 
-# Prototypes of an mobile app for Vodafone
+Fifth abundantly made Give sixth hath. Cattle creature i be don't them.
+<!--more-->
 
 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
 
