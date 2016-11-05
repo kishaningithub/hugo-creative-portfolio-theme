@@ -1,8 +1,5 @@
 <div class="col-xs-12 col-sm-8 col-md-9 content-column">
-    <div class="small-navbar visible-xs">
-        <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
-        <h1 class="small-navbar-heading"><a href="/">{{ .Site.Title }}</a></h1>
-    </div>
+    {{ partial "mobileNavToggle.html" . }}
     <div class="grid">
         <div class="row">
           {{ range .Site.Pages.Reverse }}
@@ -22,17 +19,14 @@
                       {{ else }}
                       <div class="box-masonry-text">
                       {{ end }}
-                          <h4> <a href="detail.html">{{ .Title }}</a></h4>
+                          <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
                           <div class="box-masonry-desription">
                               <p>{{ .Params.shortdesc }}</p>
                           </div>
                       </div>
                   </div>
               </div>
-
           {{ end }}
-
         </div>
     </div>
-
 </div>
