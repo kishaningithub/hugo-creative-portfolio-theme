@@ -5,9 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="all,follow">
 <meta name="googlebot" content="index,follow,snippet,archive">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css">
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome.min.css">
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/owl.carousel.css">
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/owl.theme.css">
 <!-- Theme stylesheet, if possible do not edit this stylesheet -->
 {{ if and (isset .Site.Params "style") .Site.Params.style }}
   <link href="{{ .Site.BaseURL }}css/style.{{ .Site.Params.style }}.css" rel="stylesheet" id="theme-stylesheet">

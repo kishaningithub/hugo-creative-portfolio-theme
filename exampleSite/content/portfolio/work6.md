@@ -4,6 +4,7 @@ image = ""
 date = "2016-11-05T19:56:17+05:30"
 title = "Name of the work 6"
 showonlyimage = false
+weight = 6
 +++
 
 Fifth abundantly made Give sixth hath. Cattle creature i be don't them.

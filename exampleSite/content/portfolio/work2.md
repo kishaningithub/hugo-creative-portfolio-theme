@@ -4,6 +4,7 @@ title = "Name of the work 2"
 draft = false
 image = "img/portfolio/business-card-26.jpg"
 showonlyimage = false
+weight = 1
 +++
 
 When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.

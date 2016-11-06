@@ -1,0 +1,27 @@
+<p class="social">
+  {{ if and (isset .Site.Params.social "facebook") .Site.Params.social.facebook }}
+  <a href="{{ .Site.Params.social.facebook }}" data-animate-hover="pulse" class="external facebook">
+    <i class="fa fa-facebook"></i>
+  </a>
+  {{end}}
+  {{ if and (isset .Site.Params.social "googleplus") .Site.Params.social.googleplus }}
+  <a href="{{ .Site.Params.social.googleplus }}" data-animate-hover="pulse" class="external gplus">
+    <i class="fa fa-google-plus"></i>
+  </a>
+  {{end}}
+  {{ if and (isset .Site.Params.social "twitter") .Site.Params.social.twitter }}
+  <a href="{{ .Site.Params.social.twitter }}" data-animate-hover="pulse" class="external twitter">
+    <i class="fa fa-twitter"></i>
+  </a>
+  {{end}}
+  {{ if and (isset .Site.Params.social "instagram") .Site.Params.social.instagram }}
+  <a href="{{ .Site.Params.social.instagram }}" title="" class="external instagram">
+    <i class="fa fa-instagram"></i>
+  </a>
+  {{end}}
+  {{ if and (isset .Site.Params.social "email") .Site.Params.social.email }}
+  <a href="mailto:{{ .Site.Params.social.email }}" data-animate-hover="pulse" class="email">
+    <i class="fa fa-envelope"></i>
+  </a>
+  {{end}}
+</p>
