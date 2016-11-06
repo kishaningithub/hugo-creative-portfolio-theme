@@ -5,9 +5,9 @@ name = "Creative portfolio"
 license = "MIT"
 licenselink = "https://github.com/kishaningithub/hugo-creative-portfolio-theme/blob/master/LICENSE"
 description = "Port of the creative portfolio theme"
-homepage = "http://siteforthistheme.com/"
-tags = ["", ""]
-features = ["", ""]
+homepage = "https://github.com/kishaningithub/hugo-creative-portfolio-theme"
+tags = ["creative", "portfolio", "projects", "minimal", "responsive"]
+features = ["disqus", "bootstrap", "responsive", "google analytics"]
 min_version = 0.17
 
 [author]
