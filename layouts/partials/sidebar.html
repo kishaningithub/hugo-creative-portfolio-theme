@@ -10,10 +10,14 @@
       {{ end }}
     </ul>
     {{ partial "socialButtonsInSideBar.html" . }}
-    <div class="copyright">
-      <p class="credit">&copy;2016 Your name or company | Template by <a href="https://bootstrapious.com/free-templates" class="external">Bootstrapious.com</a></p>
-      <!-- Please do not remove the backlink to us, unless you support the development at https://bootstrapious.com/donate. It is part of the license conditions. Thanks for understanding :)        -->
 
+    <div class="copyright">
+      <p class="credit">
+        {{ if and (isset .Site.Params "copyright") .Site.Params.copyright }}
+          {{ .Site.Params.copyright | safeHTML }}
+        {{ end }}
+        {{ partial "attribution.html" . }}
+      </p>
     </div>
   </div>
 </div>
