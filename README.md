@@ -36,6 +36,10 @@ style = "default"
 
 Available options are: `default` (pink), `blue`, `green`, `pink`, `red`, `sea`, `violet`.
 
+### More style customizations?
+
+Create `css/custom.css` in your `<<base dir>>/static` folder and add all your custom styling.
+
 ### Comments
 
 The optional comments system is powered by [Disqus](https://disqus.com). If you want to enable comments, create an account in Disqus and write down your shortname.
