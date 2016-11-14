@@ -1,8 +1,9 @@
 <div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
   <div class="sidebar-content">
     <h1 class="sidebar-heading"><a href="/">{{ .Site.Title }}</a></h1>
-    <p class="sidebar-p">I am a creative illustrator and graphic designer with more than 10 years of experience. </p>
-    <p class="sidebar-p">Originally from Toronto, currently based in London. </p>
+    {{ range .Site.Params.sidebarAbout }}
+      <p class="sidebar-p">{{ . | safeHTML }}</p>
+    {{ end }}
     <ul class="sidebar-menu">
       {{ $url := .Site.BaseURL }}
       {{ range .Site.Params.navlinks }}

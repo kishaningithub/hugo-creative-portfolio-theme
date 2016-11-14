@@ -13,6 +13,10 @@ googleAnalytics = ""
   style = "default"
   description = "Describe your website"
   copyright = "&copy;2016 Your name or company"
+  sidebarAbout = [
+    "I am a creative illustrator and graphic designer with more than 10 years of experience.",
+    "Originally from Toronto, currently based in London."
+  ]
   # Contact page
      # Since this template is static, the contact form uses www.formspree.io as a
      # proxy. The form makes a POST request to their servers to send the actual
