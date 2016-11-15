@@ -1,26 +1,26 @@
 <p class="social social--big">
-  {{ if and (isset .Site.Params.social "facebook") .Site.Params.social.facebook }}
-  <a href="{{ .Site.Params.social.facebook }}" class="facebook">
+  {{ with .Site.Params.social.facebook }}
+  <a href="{{ . }}" class="facebook">
     <i class="fa fa-facebook"></i>
   </a>
   {{end}}
-  {{ if and (isset .Site.Params.social "googleplus") .Site.Params.social.googleplus }}
-  <a href="{{ .Site.Params.social.googleplus }}" class="gplus">
+  {{ with .Site.Params.social.googleplus }}
+  <a href="{{ . }}" class="gplus">
     <i class="fa fa-google-plus"></i>
   </a>
   {{end}}
-  {{ if and (isset .Site.Params.social "twitter") .Site.Params.social.twitter }}
-  <a href="{{ .Site.Params.social.twitter }}" class="twitter">
+  {{ with .Site.Params.social.twitter }}
+  <a href="{{ . }}" class="twitter">
     <i class="fa fa-twitter"></i>
   </a>
   {{end}}
-  {{ if and (isset .Site.Params.social "instagram") .Site.Params.social.instagram }}
-  <a href="{{ .Site.Params.social.instagram }}" title="" class="instagram">
+  {{ with .Site.Params.social.instagram }}
+  <a href="{{ . }}" title="" class="instagram">
     <i class="fa fa-instagram"></i>
   </a>
   {{end}}
-  {{ if and (isset .Site.Params.social "email") .Site.Params.social.email }}
-  <a href="mailto:{{ .Site.Params.social.email }}" class="email">
+  {{ with .Site.Params.social.email }}
+  <a href="mailto:{{ . }}" class="email">
     <i class="fa fa-envelope"></i>
   </a>
   {{end}}

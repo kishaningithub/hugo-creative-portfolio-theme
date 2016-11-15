@@ -14,8 +14,8 @@
 
     <div class="copyright">
       <p class="credit">
-        {{ if and (isset .Site.Params "copyright") .Site.Params.copyright }}
-          {{ .Site.Params.copyright | safeHTML }}
+        {{ with .Site.Params.copyright }}
+          {{ . | safeHTML }}
         {{ end }}
         {{ partial "attribution.html" . }}
       </p>
