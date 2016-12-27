@@ -34,4 +34,9 @@
     <i class="fa fa-stack-overflow"></i>
   </a>
   {{end}}
+  {{ with .Site.Params.social.github }}
+  <a href="{{ . }}">
+    <i class="fa fa-github"></i>
+  </a>
+  {{end}}
 </p>
