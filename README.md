@@ -1,7 +1,7 @@
 # Creative portfolio theme for hugo
 
 [![Join the chat at https://gitter.im/hugo-creative-portfolio-theme/Lobby](https://badges.gitter.im/hugo-creative-portfolio-theme/Lobby.svg)](https://gitter.im/hugo-creative-portfolio-theme/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Buy me a coffee](https://img.shields.io/badge/%F0%9F%98%8A-Buy%20me%20a%20coffee-blue.svg)](https://www.paypal.me/kishansh/5)
+![Buy me a coffee](https://img.shields.io/badge/%F0%9F%98%8A-Buy%20me%20a%20coffee-blue.svg)](https://www.paypal.me/kishansh/5)
 
 Creative portfolio is a clean and elegant template mainly made for designers and creatives but can be easily transformed into a generic website.
 
@@ -80,6 +80,9 @@ $ hugo server
 ```
 
 Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your browser.
+
+## Deployment
+ - [Deploying to Amazon S3](https://github.com/kishaningithub/hugo-creative-portfolio-theme/wiki/Deploying-to-Amazon-S3)
 
 ## Contributing
 
