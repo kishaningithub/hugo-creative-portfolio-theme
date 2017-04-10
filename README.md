@@ -84,6 +84,9 @@ Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your b
 ## Deployment
  - [Deploying to Amazon S3](https://github.com/kishaningithub/hugo-creative-portfolio-theme/wiki/Deploying-to-Amazon-S3)
 
+## Base theme version (From bootstrapious)
+ - 1.0
+
 ## Contributing
 
 Have you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](https://github.com/kishaningithub/hugo-creative-portfolio-theme/issues) to let me know. Or make directly a [pull request](https://github.com/kishaningithub/hugo-creative-portfolio-theme/pulls).
