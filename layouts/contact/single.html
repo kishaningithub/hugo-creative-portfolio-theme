@@ -1,13 +1,13 @@
 {{ define "main" }}
 <div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
-  {{ partial "mobileNavToggle.html" . }}
+  {{ partial "mobile_nav_toggle.html" . }}
   <div class="row">
     <div class="col-lg-8">
       <div class="content-column-content">
          <h1>{{ .Title }}</h1>
          {{ .Content }}
          <h4>You can find me also on:</h4>
-         {{ partial "socialButtonsInContact.html" . }}
+         {{ partial "social_buttons_in_contact.html" . }}
          {{ with .Site.Params.email }}
          <h4>Drop me a line, maybe?</h4>
          <form id="contact-form" class="contact-form form" method="post" action="https://formspree.io/{{ . }}">
