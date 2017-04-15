@@ -8,7 +8,7 @@ description = "Port of the creative portfolio theme"
 homepage = "https://github.com/kishaningithub/hugo-creative-portfolio-theme"
 tags = ["creative", "portfolio", "projects", "minimal", "responsive"]
 features = ["disqus", "bootstrap", "responsive", "google analytics"]
-min_version = 0.17
+min_version = 0.20
 
 [author]
   name = "Kishan B"
