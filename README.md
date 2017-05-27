@@ -17,6 +17,7 @@ Go to the directory where you have your Hugo site and run:
 $ mkdir themes
 $ cd themes
 $ git clone https://github.com/kishaningithub/hugo-creative-portfolio-theme.git
+$ rm -rf hugo-creative-portfolio-theme/.git
 ```
 
 For more information read the official [setup guide](https://gohugo.io/overview/installing/) of Hugo.
