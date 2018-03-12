@@ -21,7 +21,13 @@
                       {{ end }}
                           <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
                           <div class="box-masonry-description">
-                              <p>{{ .Summary }}</p>
+                            <p>
+                                {{ if .Description }}
+                                  {{ .Description }}
+                                {{ else }}
+                                  {{ .Summary }}
+                                {{ end }}
+                            </p>
                           </div>
                       </div>
                   </div>
