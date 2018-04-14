@@ -2,6 +2,7 @@
 
 [![Join the chat at https://gitter.im/hugo-creative-portfolio-theme/Lobby](https://badges.gitter.im/hugo-creative-portfolio-theme/Lobby.svg)](https://gitter.im/hugo-creative-portfolio-theme/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Buy me a coffee](https://img.shields.io/badge/☕-Buy%20me%20a%20coffee-blue.svg)](https://www.paypal.me/kishansh/5)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkishaningithub%2Fhugo-creative-portfolio-theme.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkishaningithub%2Fhugo-creative-portfolio-theme?ref=badge_shield)
 
 Creative portfolio is a clean and elegant template mainly made for designers and creatives but can be easily transformed into a generic website.
 
@@ -95,6 +96,9 @@ Have you found a bug or got an idea for a new feature? Feel free to use the [iss
 ## License
 
 This port is released under the MIT License. Check the [original theme license](https://bootstrapious.com/p/creative-portfolio) for additional licensing information.
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkishaningithub%2Fhugo-creative-portfolio-theme.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkishaningithub%2Fhugo-creative-portfolio-theme?ref=badge_large)
 
 ## Thanks
 
