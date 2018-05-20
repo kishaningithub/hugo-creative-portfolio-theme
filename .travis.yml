@@ -1,0 +1,10 @@
+sudo: false
+
+install:
+  - mkdir tools
+  - wget -q "https://github.com/gohugoio/hugo/releases/download/v0.40.3/hugo_0.40.3_Linux-64bit.tar.gz" -O "tools/hugo.tar.gz"
+  - tar -xzf tools/hugo.tar.gz -C tools
+  
+script:
+  - git clone --depth 1 https://github.com/kishaningithub/hugo-creative-portfolio-theme.git exampleSite/themes/hugo-creative-portfolio-theme
+  - ./tools/hugo -v --source exampleSite
