@@ -324,12 +324,12 @@ SIDEBAR + RIGHT COLUMN
     position: fixed;
     width: inherit;
     z-index: 0;
-    padding: 0 1em 0 0.2em;
+    padding: 0 1.7em 0 0em;
 }
 @media screen and (min-width: 992px) {
   .sidebar-content {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 0px;
+    padding-right: 18px;
   }
 }
 .sidebar-heading {
