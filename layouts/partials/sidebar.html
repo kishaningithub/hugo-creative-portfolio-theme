@@ -5,9 +5,8 @@
       <p class="sidebar-p">{{ . | safeHTML }}</p>
     {{ end }}
     <ul class="sidebar-menu">
-      {{ $url := .Site.BaseURL }}
       {{ range .Site.Params.navlinks }}
-        <li><a href="{{ $url }}{{ .url }}">{{ .name }}</a></li>
+        <li><a href="{{ absURL .url }}">{{ .name }}</a></li>
       {{ end }}
     </ul>
     {{ partial "social_buttons_in_sidebar.html" . }}
