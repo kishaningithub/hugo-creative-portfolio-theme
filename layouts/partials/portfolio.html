@@ -11,7 +11,7 @@
                         {{ else }}
                         <a href="{{ .Permalink }}" title="" class="box-masonry-image with-hover-overlay with-hover-icon">
                         {{ end }}
-                            <img src="{{.Site.BaseURL}}{{ .Params.image }}" alt="" class="img-responsive">
+                            <img src="{{.Params.image | absURL}}" alt="" class="img-responsive">
                         </a>
                       {{ end }}
                       {{ if eq .Params.showonlyimage true }}
