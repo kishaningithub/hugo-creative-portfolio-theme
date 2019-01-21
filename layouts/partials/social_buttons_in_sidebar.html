@@ -44,4 +44,9 @@
     <i class="fa fa-youtube"></i>
   </a>
   {{end}}
+  {{ with .Site.Params.social.whatsapp }}
+  <a href="{{ . }}" data-animate-hover="pulse" class="external">
+    <i class="fa fa-whatsapp"></i>
+  </a>
+  {{end}}
 </p>
