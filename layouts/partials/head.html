@@ -33,3 +33,4 @@
   <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
 {{ end }}
 {{ template "_internal/google_analytics_async.html" . }}
+{{ partial "open_graph.html" . }}

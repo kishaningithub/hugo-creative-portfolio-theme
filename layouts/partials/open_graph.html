@@ -1,0 +1,40 @@
+<!-- Required Open Graph Info -->
+<meta property="og:title" content="{{ .Title }}" />
+<meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}" />
+<meta property="og:type" content="{{ if .Params.type }}{{ .Params.type }}{{ else }}website{{ end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+{{ with .Params.images }}{{ range first 6 . }}
+	<meta property="og:image" content="{{ . }}" />
+{{ end }}{{ end }}
+
+<!-- Optional Open Graph Markup -->
+<meta property="og:updated_time" content="{{ .Date }}"/>
+{{ with .Params.audio }}<meta property="og:audio" content="{{ . }}" />{{ end }}
+{{ with .Params.locale }}<meta property="og:locale" content="{{ . }}" />{{ end }}
+{{ with .Site.Params.title }}<meta property="og:site_name" content="{{ . }}" />{{ end }}
+{{ with .Params.videos }}{{ range . }}
+	<meta property="og:video" content="{{ . }}" />
+{{ end }}{{ end }}
+
+<!-- If it is part of a series, link to related articles -->
+{{ $permalink := .Permalink }}
+{{ $siteSeries := .Site.Taxonomies.series }}
+{{ with .Params.series }}{{ range $name := . }}
+	{{ $series := index $siteSeries $name }}
+	{{ range $page := first 6 $series.Pages }}
+		{{ if ne $page.Permalink $permalink }}<meta property="og:see_also" content="{{ $page.Permalink }}" />{{ end }}
+	{{ end }}
+{{ end }}{{ end }}
+
+{{ if and  (isset .Site.Params "authors") (isset .Params "author") }}
+<!-- Article Specific Open Graph Markup -->
+{{ $author := index .Site.Params.authors .Params.author }}
+<meta property="article:author" content="https://www.facebook.com/{{ $author.social.facebook }}" />
+{{ end }}
+{{if .IsPage}}
+{{ end }}
+<meta property="article:modified_time" content="{{ .Date }}" />
+<meta property="article:section" content="{{ .Section }}" />
+{{ with .Params.tags }}{{ range first 6 . }}
+	<meta property="article:tag" content="{{ . }}" />
+{{ end }}{{ end }}
