@@ -31,6 +31,15 @@ googleAnalytics = ""
      # - you're done. Happy mailing!
   email = "you@yoursite.com"
 
+    # Optional Matomo analytics (formerly piwik)
+      # [params.analytics.matomo]
+      #  URL = "https://stats.example.com"
+      #  ID = "42"
+      #  # Track all subdomains with "*.example.com" (Optional)
+      #  domain = "www.example.com"
+      #  # Optional integrity check hash
+      #  hash = ""
+
   # Nav links in the side bar
   [[params.navlinks]]
   name = "Home"
