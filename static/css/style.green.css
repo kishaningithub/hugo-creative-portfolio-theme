@@ -319,10 +319,7 @@ SIDEBAR + RIGHT COLUMN
 #sidebar {
   padding-top: 40px;
 }
-/*modified sidebar to follow scroll */
 .sidebar-content {
-    position: fixed;
-    width: inherit;
     z-index: 0;
     padding: 0 1.7em 0 0em;
 }
