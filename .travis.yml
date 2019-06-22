@@ -2,7 +2,7 @@ sudo: false
 
 install:
   - mkdir tools
-  - wget -q "https://github.com/gohugoio/hugo/releases/download/v0.40.3/hugo_0.40.3_Linux-64bit.tar.gz" -O "tools/hugo.tar.gz"
+  - wget -q "https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_0.55.6_Linux-64bit.tar.gz" -O "tools/hugo.tar.gz"
   - tar -xzf tools/hugo.tar.gz -C tools
   
 script:
