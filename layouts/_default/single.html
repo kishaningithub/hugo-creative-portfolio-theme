@@ -4,9 +4,12 @@
   <div class="row">
     <div class="col-lg-8">
       <div class="content-column-content">
-         <h1>{{ .Title }}</h1>
-         {{ .Content }}
-         {{ template "_internal/disqus.html" . }}
+        <h1>{{ .Title }}</h1>
+        <div class="margin-bottom">
+          <img src="{{ .Params.image | relURL }}" />
+        </div>
+        {{ .Content }}
+        {{ template "_internal/disqus.html" . }}
       </div>
     </div>
   </div>
