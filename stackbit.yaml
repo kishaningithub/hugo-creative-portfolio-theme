@@ -1,0 +1,142 @@
+stackbitVersion: ~0.2.0
+ssgName: custom
+publishDir: exampleSite/public
+buildCommand: cd exampleSite && hugo --gc --baseURL "/" --themesDir ../.. && cd ..
+uploadDir: images
+staticDir: exampleSite/static
+pagesDir: exampleSite/content
+dataDir: exampleSite
+models:
+  config:
+    type: data
+    label: Config
+    file: config.toml
+    fields:
+      - type: string
+        name: title
+        label: Title
+        required: true
+      - type: string
+        name: baseurl
+        label: Base URL
+        description: Hostname (and path) to the root
+      - type: string
+        name: theme
+        label: Theme Name
+      - type: string
+        name: languageCode
+        label: Language Code "en"
+      - type: string
+        name: themesDir
+        label: Themes Folder Path
+      - type: string
+        name: googleAnalytics
+        label: Google Analytics ID
+      - type: string
+        name: disqusShortname
+        label: Disqus Shortname
+      - type: object
+        name: params
+        label: Params
+        description: Site parameters
+        fields:
+          - type: enum
+            name: style
+            label: Theme Style
+            options: ['default', 'blue', 'green', 'pink', 'red', 'sea', 'violet']
+          - type: string
+            name: description
+            label: Description
+          - type: string
+            name: copyright
+            label: Copyright
+          - type: list
+            name: sidebarAbout
+            items:
+              type: string
+          - type: string
+            name: email
+            label: Email
+          - type: list
+            name: navlinks
+            fields:
+              - type: object
+                name: link
+                fields:
+                  - type: string
+                    name: name
+                    label: Name
+                  - type: string
+                    name: url
+                    label: URL
+                  - type: boolean
+                    name: home
+                    label: Is This The Homepage Link?
+          - type: object
+            name: social
+            fields:
+              - type: string
+                name: facebook
+              - type: string
+                name: googleplus
+              - type: string
+                name: email
+              - type: string
+                name: twitter
+              - type: string
+                name: linkedin
+              - type: string
+                name: stackoverflow
+              - type: string
+                name: instagram
+              - type: string
+                name: github
+              - type: string
+                name: youtube
+              - type: string
+                name: whatsapp
+  about:
+    type: page
+    label: About
+    folder: about
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: date
+        name: date
+        label: Date
+  contact:
+    type: page
+    label: Contact
+    folder: contact
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: date
+        name: date
+        label: Date
+  portfolio:
+    type: page
+    label: Portfolio
+    folder: portfolio
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: date
+        name: date
+        label: Date
+      - type: boolean
+        name: showonlyimage
+        label: Show Only Image?
+      - type: boolean
+        name: draft
+        label: Draft
+      - type: image
+        name: image
+        label: image
+      - type: number
+        name: weight
+        label: Weight
