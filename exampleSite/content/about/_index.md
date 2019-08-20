@@ -1,7 +1,7 @@
-+++
-date = "2016-11-05T21:05:33+05:30"
-title = "About me"
-+++
+---
+date: "2016-11-05T21:05:33+05:30"
+title: "About me"
+---
 
 An sincerity so extremity he additions. Her yet **there truth merit**. Mrs all projecting favourable now unpleasing. Son law garden chatty temper. Oh children provided to mr elegance marriage strongly. Off can admiration prosperous now devonshire diminution law.
 
@@ -13,8 +13,8 @@ The Big Oxmox advised her not to do so, because there were thousands of bad Comm
 
 #### Education
 
-* Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-* Aliquam tincidunt mauris eu risus.
+- Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+- Aliquam tincidunt mauris eu risus.
 
 When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then
 
