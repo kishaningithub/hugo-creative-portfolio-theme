@@ -59,19 +59,19 @@ models:
             label: Email
           - type: list
             name: navlinks
-            fields:
-              - type: object
-                name: link
-                fields:
-                  - type: string
-                    name: name
-                    label: Name
-                  - type: string
-                    name: url
-                    label: URL
-                  - type: boolean
-                    name: home
-                    label: Is This The Homepage Link?
+            items:
+              type: object
+              labelField: name
+              fields:
+                - type: string
+                  name: name
+                  label: Name
+                - type: string
+                  name: url
+                  label: URL
+                - type: boolean
+                  name: home
+                  label: Is This The Homepage Link?
           - type: object
             name: social
             fields:
