@@ -23,6 +23,12 @@ rm -rf hugo-creative-portfolio-theme/.git
 
 For more information read the official [setup guide](https://gohugo.io/overview/installing/) of Hugo.
 
+## Create with Stackbit
+
+This theme contains a `stackbit.yaml` file and can be used with Stackbit to instantly deploy to Netlify with optional headless CMS (Contentful, DatoCMS, Forestry, NetlifyCMS, etc.).
+
+[![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/kishaningithub/hugo-creative-portfolio-theme)
+
 ## Configuration
 
 After installing the Creative portfolio theme successfully, i recommend you to take a look at the [exampleSite](https://github.com/kishaningithub/hugo-creative-portfolio-theme/tree/master/exampleSite) directory. You will find a working Hugo site configured with the Creative portfolio theme that you can use as a starting point for your site.
