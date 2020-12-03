@@ -39,6 +39,11 @@
     <i class="fa fa-github"></i>
   </a>
   {{end}}
+  {{ with .Site.Params.social.gitlab }}
+  <a href="{{ . }}" data-animate-hover="pulse" class="external">
+    <i class="fa fa-gitlab"></i>
+  </a>
+  {{end}}
   {{ with .Site.Params.social.youtube }}
   <a href="{{ . }}">
     <i class="fa fa-youtube"></i>
