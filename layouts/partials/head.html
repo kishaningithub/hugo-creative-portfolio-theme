@@ -29,4 +29,4 @@
 {{ with .OutputFormats.Get "RSS" }}
   {{ printf `<link href="%s" rel="%s" type="%s" title="%s" />` .Permalink .Rel .MediaType.Type $.Site.Title | safeHTML }}
 {{ end }}
-{{ template "_internal/google_analytics_async.html" . }}
+{{ template "_internal/google_analytics.html" . }}
