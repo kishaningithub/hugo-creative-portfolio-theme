@@ -43,6 +43,17 @@ Available options are: `default` (pink), `blue`, `green`, `pink`, `red`, `sea`, 
 
 Create `css/custom.css` in your `<<base dir>>/static` folder and add all your custom styling.
 
+### [Add hugo contact form](https://fabform.io/a/hugo-contact-form)
+ 
+  ```
+ <form action="https://fabform.io/f/{form-id}" method="post">
+  <label for="email">Your Email</label>
+  <input name="email" type="email">
+  <button type="submit">Submit</button> 
+ </form>
+```
+
+
 ### Comments
 
 The optional comments system is powered by [Disqus](https://disqus.com). If you want to enable comments, create an account in Disqus and write down your shortname.
