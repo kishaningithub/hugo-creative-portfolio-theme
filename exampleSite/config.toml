@@ -1,11 +1,18 @@
 baseurl = "https://example.org/"
 title = "Creative portfolio"
-theme = "hugo-creative-portfolio-theme"
 languageCode = "en-us"
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = ""
+
+# Run theme as local git clone
+theme = "github.com/kishaningithub/hugo-creative-portfolio-theme"
+# Or, if you want to run theme as hugo module
+# [module]
+#   [[module.imports]]
+#     path = "github.com/google/docsy"
+
 
 [params]
   # Style options: default (pink), blue, green, pink, red, sea, violet
