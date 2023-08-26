@@ -1,6 +1,5 @@
 # Creative portfolio theme for hugo
 
-[![Build Status](https://travis-ci.org/kishaningithub/hugo-creative-portfolio-theme.svg?branch=master)](https://travis-ci.org/kishaningithub/hugo-creative-portfolio-theme)
 [![Join the chat at https://gitter.im/hugo-creative-portfolio-theme/Lobby](https://badges.gitter.im/hugo-creative-portfolio-theme/Lobby.svg)](https://gitter.im/hugo-creative-portfolio-theme/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Buy me a coffee](https://img.shields.io/badge/☕-Buy%20me%20a%20coffee-blue.svg)](https://www.paypal.me/kishansh/5)
 
@@ -12,6 +11,8 @@ This Hugo theme was ported from [Bootstrapious](https://bootstrapious.com/p/crea
 
 ## Installation
 
+### Use theme component locally as git clone
+
 Go to the directory where you have your Hugo site and run:
 
 ```bash
@@ -21,7 +22,26 @@ git clone https://github.com/kishaningithub/hugo-creative-portfolio-theme.git
 rm -rf hugo-creative-portfolio-theme/.git
 ```
 
-For more information read the official [setup guide](https://gohugo.io/overview/installing/) of Hugo.
+For more information read the official documentation on [theme components](https://gohugo.io/hugo-modules/theme-components/).
+
+### Use theme as hugo module
+
+In the root directory of your project, initialise your project as hugo module and add the `hugo-creative-portfolio-theme` theme as dependency:
+
+```bash
+hugo mod init github.com/me/my-new-site
+hugo mod get github.com/kishaningithub/hugo-creative-portfolio-theme
+```
+
+In your `hugo.toml` / `config.toml`, add these lines to add the theme:
+
+```bash
+[module]
+[[module.imports]]
+path = "github.com/google/docsy/dependencies"
+```
+
+For more information read the official documentation on [hugo modules](https://gohugo.io/hugo-modules/use-modules/) of Hugo.
 
 ## Configuration
 
@@ -101,4 +121,4 @@ This port is released under the MIT License. Check the [original theme license](
 
 ## Thanks
 
-Thanks to [Steve Francia](https://github.com/spf13) for creating Hugo and the awesome community around the project. And also thanks to [Bootstrapious](http://bootstrapious.com/) for creating this awesome theme.
+Thanks to [Steve Francia](https://github.com/spf13) for creating Hugo and the awesome community around the project. And also thanks to [Bootstrapious](https://bootstrapious.com/) for creating this awesome theme.
